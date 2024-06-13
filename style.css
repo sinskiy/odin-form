@@ -13,12 +13,12 @@ body {
 header {
   position: relative;
 
-  flex-grow: 1;
+  flex: 1;
 
   color: white;
 }
 main {
-  flex-grow: 2;
+  flex: 2;
 }
 
 figure figcaption {
@@ -53,4 +53,13 @@ figcaption a {
 #logo #company-name {
   font-family: "Abril Fatface", serif;
   font-size: 2.5rem;
+}
+
+main {
+  padding-top: 8rem;
+  padding-left: 3rem;
+}
+
+#description p {
+  max-width: 60ch;
 }
