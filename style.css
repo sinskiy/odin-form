@@ -8,6 +8,8 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
   display: flex;
+
+  overflow: hidden;
 }
 
 header {
@@ -72,6 +74,7 @@ p {
   margin-top: 4rem;
   padding: 1.5rem 3rem;
   background-color: white;
+  box-shadow: 0 1rem 1rem rgb(0 0 0 / 0.1);
 }
 
 ul {
@@ -88,7 +91,7 @@ li {
 }
 
 label {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.125rem;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -96,8 +99,8 @@ label {
 input {
   padding: 0.5rem;
   border: 1px solid var(--border);
-  border-radius: 4px;
-  font-size: 16px;
+  border-radius: 0.25rem;
+  font-size: 1rem;
 }
 
 input:focus {
@@ -107,4 +110,33 @@ input:focus {
 
 input:invalid {
   outline: 1px solid red;
+}
+
+#form-submit {
+  margin-top: 2rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  width: fit-content;
+  margin-bottom: 2rem;
+  padding: 1rem 4rem;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+#login {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+#login-link {
+  color: var(--primary);
+  text-decoration: none;
 }
