@@ -57,9 +57,54 @@ figcaption a {
 
 main {
   padding-top: 8rem;
+  background-color: hsl(0 0% 95%);
+}
+
+section {
   padding-left: 3rem;
 }
 
-#description p {
+p {
   max-width: 60ch;
+}
+
+#form-inputs {
+  margin-top: 4rem;
+  padding: 1.5rem 3rem;
+  background-color: white;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem 6rem;
+
+  width: 70%;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+input {
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: 1px solid royalblue;
+  box-shadow: 1px 1px 5px rgb(0 0 0 / 0.2);
+}
+
+input:invalid {
+  outline: 1px solid red;
 }
